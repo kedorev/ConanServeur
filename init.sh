@@ -12,8 +12,9 @@ sudo passwd -e 111111 kedorev
 usermod -aG sudo kedorev
 
 #Installtion de zsh
-sudo apt-get install zsh
+sudo -u apt-get install zsh
 $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+cd /home/kedorev
 sed -i "s/robbyrussell/dallas/" ./.zshrc
 
 #Modification des sources
