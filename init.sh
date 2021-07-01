@@ -16,12 +16,15 @@ sudo apt-get install zsh
 $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sed -i "s/robbyrussell/dallas/" ./.zshrc
 
+#Modification des sources
+#Aucune modification, les sources sont deja a jour
+
 #Ajout des lib et archi
-#sudo apt-get install lib32gcc1 software-properties-common -y
-#sudo dpkg --add-architecture i386
-#sudo apt-get update
-#sudo apt-get upgrade
+sudo apt-get install lib32gcc1 software-properties-common -y
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get upgrade
 
 #Installation de steam
-#sudo apt-get install steamcmd
-#sudo useradd -m -s /bin/bash steam
+
+#Cette action devra se faire à la main : sudo apt-get install steamcmd -y
