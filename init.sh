@@ -11,6 +11,7 @@ sudo useradd kedorev
 sudo passwd -e 111111 kedorev
 usermod -aG sudo kedorev
 
+
 #Installtion de zsh
 sudo -u apt-get install zsh
 $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
@@ -25,6 +26,10 @@ sudo apt-get install lib32gcc1 software-properties-common -y
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get upgrade
+
+
+#Paramétrage des IP
+
 
 #Installation de steam
 
